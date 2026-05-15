@@ -1,0 +1,192 @@
+2026-05-15 21:16:29,591 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:16:29,592 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:16:29,592 - Scheduler started
+2026-05-15 21:17:44,630 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:17:44,631 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:17:44,631 - Scheduler started
+2026-05-15 21:22:44,634 - Running job "run_pipeline (trigger: interval[0:05:00], next run at: 2026-05-15 21:22:44 CEST)" (scheduled at 2026-05-15 21:22:44.630288+02:00)
+2026-05-15 21:22:46,087 - Request Status: 200
+2026-05-15 21:22:46,205 - Job "run_pipeline (trigger: interval[0:05:00], next run at: 2026-05-15 21:27:44 CEST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Admin\Desktop\Projekti GEG\backend\scheduler_ui.py", line 15, in run_pipeline
+    save_raw_news(parsed)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\backend\storage.py", line 12, in save_raw_news
+    existing = pd.read_csv(RAW_FILE)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2026-05-15 21:27:44,646 - Running job "run_pipeline (trigger: interval[0:05:00], next run at: 2026-05-15 21:32:44 CEST)" (scheduled at 2026-05-15 21:27:44.630288+02:00)
+2026-05-15 21:27:46,109 - Request Status: 200
+2026-05-15 21:27:46,122 - Job "run_pipeline (trigger: interval[0:05:00], next run at: 2026-05-15 21:32:44 CEST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Admin\Desktop\Projekti GEG\backend\scheduler_ui.py", line 15, in run_pipeline
+    save_raw_news(parsed)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\backend\storage.py", line 12, in save_raw_news
+    existing = pd.read_csv(RAW_FILE)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2026-05-15 21:32:44,633 - Running job "run_pipeline (trigger: interval[0:05:00], next run at: 2026-05-15 21:37:44 CEST)" (scheduled at 2026-05-15 21:32:44.630288+02:00)
+2026-05-15 21:32:45,804 - Request Status: 200
+2026-05-15 21:32:45,816 - Job "run_pipeline (trigger: interval[0:05:00], next run at: 2026-05-15 21:37:44 CEST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Admin\Desktop\Projekti GEG\backend\scheduler_ui.py", line 15, in run_pipeline
+    save_raw_news(parsed)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\backend\storage.py", line 12, in save_raw_news
+    existing = pd.read_csv(RAW_FILE)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Projekti GEG\venv\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2026-05-15 21:36:23,086 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:36:23,087 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:36:23,087 - Scheduler started
+2026-05-15 21:36:44,583 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:36:44,583 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:36:44,583 - Scheduler started
+2026-05-15 21:36:59,579 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:36:59,579 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:36:59,579 - Scheduler started
+2026-05-15 21:37:41,424 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:37:41,425 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:37:41,425 - Scheduler started
+2026-05-15 21:38:56,280 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:38:56,280 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:38:56,280 - Scheduler started
+2026-05-15 21:39:49,643 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:39:49,644 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:39:49,644 - Scheduler started
+2026-05-15 21:39:52,301 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:39:52,301 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:39:52,301 - Scheduler started
+2026-05-15 21:41:14,550 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:41:14,551 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:41:14,552 - Scheduler started
+2026-05-15 21:41:14,573 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:41:14,575 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:41:14,575 - Scheduler started
+2026-05-15 21:41:16,221 - Request Status: 200
+2026-05-15 21:41:16,226 - Request Status: 200
+2026-05-15 21:41:40,926 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:41:40,927 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:41:40,927 - Scheduler started
+2026-05-15 21:41:42,318 - Request Status: 200
+2026-05-15 21:42:52,652 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:42:52,653 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:42:52,653 - Scheduler started
+2026-05-15 21:42:54,145 - Request Status: 200
+2026-05-15 21:43:18,247 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:43:21,949 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:43:32,604 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:43:36,820 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:43:37,476 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:43:37,476 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:43:37,476 - Scheduler started
+2026-05-15 21:43:38,109 - Request Status: 200
+2026-05-15 21:43:49,009 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:43:56,767 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:44:01,928 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:44:05,491 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:44:18,783 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:44:32,675 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:44:45,693 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:44:48,908 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:44:59,793 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:45:07,860 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:45:12,924 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:45:18,262 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:45:27,438 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:45:41,375 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:45:44,648 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:45:52,818 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:46:04,327 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:46:09,786 - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-15 21:46:13,548 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:46:13,548 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:46:13,549 - Scheduler started
+2026-05-15 21:46:14,110 - Request Status: 200
+2026-05-15 21:46:15,525 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:46:15,556 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:46:15,556 - Scheduler started
+2026-05-15 21:46:16,284 - Request Status: 200
+2026-05-15 21:46:19,189 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:46:19,190 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:46:19,190 - Scheduler started
+2026-05-15 21:46:19,751 - Request Status: 200
+2026-05-15 21:51:15,455 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:51:15,456 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:51:15,456 - Scheduler started
+2026-05-15 21:51:15,459 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:51:15,459 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:51:15,459 - Scheduler started
+2026-05-15 21:51:15,528 - Running job "run_pipeline (trigger: interval[0:05:00], next run at: 2026-05-15 21:51:15 CEST)" (scheduled at 2026-05-15 21:51:15.525755+02:00)
+2026-05-15 21:51:16,307 - Request Status: 401
+2026-05-15 21:51:16,307 - Request Status: 401
+2026-05-15 21:51:17,054 - Request Status: 200
+2026-05-15 21:51:17,179 - Job "run_pipeline (trigger: interval[0:05:00], next run at: 2026-05-15 21:56:15 CEST)" executed successfully
+2026-05-15 21:52:41,998 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:52:41,998 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:52:41,999 - Scheduler started
+2026-05-15 21:52:42,549 - Request Status: 401
+2026-05-15 21:52:45,405 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-15 21:52:45,405 - Added job "run_pipeline" to job store "default"
+2026-05-15 21:52:45,405 - Scheduler started
+2026-05-15 21:52:46,145 - Request Status: 401
+2026-05-15 21:54:13,744 - Request Status: 401
+2026-05-15 21:54:13,745 - Request Status: 401
+2026-05-15 21:54:14,147 - Request Status: 401
+2026-05-15 21:55:41,618 - Request Status: 401
+2026-05-15 21:55:45,215 - Request Status: 401
+2026-05-15 21:56:47,508 - Request Status: 200
+2026-05-15 21:56:47,508 - Request Status: 200
+2026-05-15 22:01:48,144 - Request Status: 200
+2026-05-15 22:05:41,768 - Request Status: 200
+2026-05-15 22:05:42,484 - Request Status: 200
+2026-05-15 22:05:48,505 - Request Status: 200
+2026-05-15 22:06:19,088 - Request Status: 200
+2026-05-15 22:06:49,824 - Request Status: 200
+2026-05-15 22:11:50,642 - Request Status: 200
