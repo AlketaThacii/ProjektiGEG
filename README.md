@@ -43,27 +43,3 @@ The system updates automatically every 5 minutes and provides request logging, n
 
 ---
 
-## Project Structure
-
-```txt
-intelligent-news/
-│
-├── backend/
-│   ├── main.py
-│   ├── collector.py
-│   ├── parser.py
-│   ├── storage.py
-│   ├── rewriter.py
-│   ├── scheduler_ui.py
-│   ├── logs/
-│   │   └── requests.log
-│   ├── data/
-│   │   ├── raw_news.csv
-│   │   └── processed_news.csv
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── src/
-│   └── package.json
-│
-└── README.md
