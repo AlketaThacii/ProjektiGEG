@@ -11,7 +11,7 @@ def rewrite_text(text):
             messages=[
                 {
                     "role": "user",
-                    "content": f"Rewrite this news professionally while preserving meaning: {text}"
+                    "content": f"Rewrite this title or description professionally in one sentence only and preserve meaning: {text}"
                 }
             ]
         )
@@ -19,5 +19,5 @@ def rewrite_text(text):
         return response["message"]["content"]
 
     except Exception as e:
-        print("Rewrite error:", e)
+        print("Ollama error:", e)
         return text

@@ -41,7 +41,7 @@ def run_pipeline():
         "Original Title": item["Title"],
         "Rewritten Title": rewrite_text(item["Title"]),
         "Original Description": item["Description"],
-        "Rewritten Description": rewrite_text(item["Description"]),
+        "Rewritten Description": item["Description"],
         "Source Website": item["Website Link"],
         "Article Link": item["Article Link"],
         "CreatedAt": item["CreatedAt"]
