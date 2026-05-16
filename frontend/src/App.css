@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f6f9;
+  background: #0f172a;
+  color: #e2e8f0;
 }
 
 .container {
@@ -10,15 +11,16 @@ body {
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #38bdf8;
 }
 
 .status-box {
-  background: white;
+  background: #1e293b;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #e2e8f0;
 }
 
 .search {
@@ -26,8 +28,14 @@ h1 {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: white;
   font-size: 16px;
+}
+
+.search::placeholder {
+  color: #94a3b8;
 }
 
 .table-container {
@@ -37,21 +45,24 @@ h1 {
 table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #1e293b;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 th {
-  background: #2563eb;
-  color: white;
+  background: #38bdf8;
+  color: #0f172a;
   padding: 15px;
 }
 
 td {
   padding: 12px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #334155;
+  color: #e2e8f0;
 }
 
 tr:hover {
-  background: #f1f5f9;
+  background: #334155;
 }

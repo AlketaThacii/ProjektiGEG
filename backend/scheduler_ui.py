@@ -36,16 +36,16 @@ def run_pipeline():
     processed = []
 
     for item in parsed:
-        processed.append({
-            "ID": item["ID"],
-            "Original Title": item["Title"],
-            "Rewritten Title": rewrite_text(item["Title"]),
-            "Original Description": item["Description"],
-            "Rewritten Description": rewrite_text(item["Description"]),
-            "Source Website": item["Website Link"],
-            "Article Link": item["Article Link"],
-            "CreatedAt": item["CreatedAt"]
-        })
+     processed.append({
+        "ID": item["ID"],
+        "Original Title": item["Title"],
+        "Rewritten Title": rewrite_text(item["Title"]),
+        "Original Description": item["Description"],
+        "Rewritten Description": rewrite_text(item["Description"]),
+        "Source Website": item["Website Link"],
+        "Article Link": item["Article Link"],
+        "CreatedAt": item["CreatedAt"]
+    })
 
     add_status("AI rewriting completed")
 
@@ -57,3 +57,5 @@ def run_pipeline():
 scheduler.add_job(run_pipeline, 'interval', minutes=5)
 scheduler.start()
 run_pipeline()
+print("AI rewriting completed")
+print("Processed CSV updated successfully")

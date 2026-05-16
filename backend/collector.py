@@ -9,7 +9,7 @@ URL = (
     f"language=en&pageSize=10&apiKey={API_KEY}"
 )
 
-# krijon folder logs automatikisht
+# krijohet folderi logs automatikisht
 os.makedirs("logs", exist_ok=True)
 
 # logger

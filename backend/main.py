@@ -23,22 +23,17 @@ def home():
 # Raw news
 @app.get("/raw-news")
 def raw_news():
-    try:
-        df = pd.read_csv("data/raw_news.csv")
-        return df.to_dict(orient="records")
-    except:
-        return []
+    df = pd.read_csv("data/raw_news.csv")
+    df = df.fillna("")
+    return df.to_dict(orient="records")
 
 
 # Processed news
 @app.get("/processed-news")
 def processed_news():
-    try:
-        df = pd.read_csv("data/processed_news.csv")
-        return df.to_dict(orient="records")
-    except:
-        return []
-
+    df = pd.read_csv("data/processed_news.csv")
+    df = df.fillna("")
+    return df.to_dict(orient="records")
 
 # Status notifications
 @app.get("/status")
